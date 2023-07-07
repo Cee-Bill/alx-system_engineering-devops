@@ -1,34 +1,34 @@
-# Task to illustrate understanding of basic Linux commands and shell scripting
+# Task to illustrate understanding of basic permissions on Shell
 ## The following will descibe what each script does
 
-- 0-current_working_directory prints the absolute pathway of the current working directory
+- 0-iam_betty switches the current user to betty
 
-- 1-listit displays content list of the current directory
+- 1-who_am_i prints the current user
 
-- 2-bring_me_home changes directory to home directory for that user
+- 2-groups prints all the groups of the current user
 
-- 3-listfiles displays content list of current directory in long format
+- 3-new_owner chages a file owner to the user betty
 
-- 4-listmorefiles displays **ALL** contents of the current directory in long format
+- 4-empty creates an empty file called hello
 
-- 5-listfilesdigitonly displays a long format list of directory content with
-    user and group IDs displayed numerically and some hidden files
+- 5-execute adds execute permission to the owner of the file hello
 
-- 6-firstdirectory creates a directory in the tmp directory
+- 6-multiple_permissions updates the hello file permission to r-xr-xr-- at once 
 
-- 7-movethatfile moves file betty from tmp to a new directory
+- 7-everybody adds x permission to all
 
-- 8-firstdelete deletes file betty
+- 8-James_Bond sets the hello file permission to ------rwx
 
-- 9-firstdirdeletion deletes a directory
+- 9-John_Doe sets the hello file permission to rwxr-x-wx
 
-- 10-back changes the current working directory to the previous
+- 10-mirror_permissions sets the hello file permission the same as olleh’s
 
-- 11-lists displays a long format list of all files in the current directory
-     and the parent of the working directory and the boot directory
+- 11-directories_permissions adds x permission to all subdirectories of the current directory
 
-- 12-file_type print the file type of a new file, iamafile, in tmp directory
+- 12-directory_permissions creates a directory called my_dir with permissions 751
 
-- 13-symbolic_link creates a symbolic link to ls in the bin directory
+- 13-change_group changes the group owner to school for the file hello
 
-- 14-copy_html copies all HTML files from working directory to the parent directory
+- 100-change_owner_and_group changes the owner to vincent and the group to staff
+
+- 101-symbolic_link_permissions changes the owner and the group _hello to vincent and staff
